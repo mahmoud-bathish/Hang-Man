@@ -47,7 +47,7 @@ hr {
     display: none;
 }
 
-.hangman-draw .the-stand:before {
+.hangman-draw .the-stand {
     content: '';
     position: absolute;
     width: 4px;
