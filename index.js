@@ -78,7 +78,7 @@ document.addEventListener("click", (e) => {
                 endGame();
                 lettersContainer.classList.add("finished");
             }
-        
+
         }
     }
 })
@@ -87,9 +87,18 @@ document.addEventListener("click", (e) => {
 
 function endGame() {
     let div = document.createElement("div");
-    let divText =document.createTextNode(`Game Over , The Word Is ${randomValueValue}`);
+    let divText = document.createTextNode(`Game Over , The Word Is ${randomValueValue}`);
     div.appendChild(divText);
     div.className = 'popup';
+    let span = document.createElement("span");
+    let spanText = document.createTextNode('Reset');
+    span.appendChild(spanText);
+    span.className = 'reset';
+    div.appendChild(span);
     document.body.appendChild(div);
+    span.onclick = function () {
+        location.reload();
+    }
 }
+
 

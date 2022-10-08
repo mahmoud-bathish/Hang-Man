@@ -281,5 +281,16 @@ hr {
     color: #FFF;
 }
 
-
+.reset {
+    display: block;
+    width: max-content;
+    height: 50px;
+    background-color: #0d756b;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    top: calc(100% - 60px);
+    left: calc(50% - 50px);
+    cursor: pointer;
+}
 
